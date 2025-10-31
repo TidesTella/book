@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.path.startsWith("正常人体结构与机能")
+        - file.ext == "md"
+    order:
+      - file.name
+      - file.basename
+      - file.ext
+      - file.links
+    sort: []
+  - type: table
+    name: 人
